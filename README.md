@@ -22,7 +22,7 @@ The generated static site is in `dist/` and can be deployed to any static host (
 
 ## Content and integrations
 
-All personal content is taken from `Parimaladevi_N_Resume.pdf`. Resume projects, education, skills, experience, certifications, and achievements are not supplemented with invented claims. GitHub repositories are fetched from the public GitHub API at runtime for `parimalanagar07`; if GitHub is rate-limited or unavailable, the page shows the two verified resume projects and an honest status message. LinkedIn and LeetCode are direct links to the supplied public profiles.
+All personal content is taken from `Parimaladevi_N_Resume.pdf`. Resume projects, education, skills, experience, certifications, and achievements are not supplemented with invented claims. GitHub repositories are fetched from the public GitHub API at runtime for `parimalanagaraj07`; if GitHub is rate-limited or unavailable, the page shows the two verified resume projects and an honest status message. LinkedIn and LeetCode are direct links to the supplied public profiles.
 
 The hero uses a static CSS/SVG sculptural portrait treatment because no separate portrait photo was present in the supplied attachments. Replace it with an actual portrait-derived asset only when a portrait photo is provided; no video is used anywhere.
 

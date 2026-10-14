@@ -49,7 +49,7 @@ const skillGroups = [
 ];
 
 const profileLinks = [
-  { label: 'GitHub', handle: '@parimalanagar07', description: 'Public repositories, experiments, and work in progress.', href: 'https://github.com/parimalanagar07', icon: 'GH' },
+  { label: 'GitHub', handle: '@parimalanagaraj07', description: 'Public repositories, experiments, and work in progress.', href: 'https://github.com/parimalanagaraj07', icon: 'GH' },
   { label: 'LinkedIn', handle: 'Parimala Devi', description: 'Professional profile and learning journey.', href: 'https://www.linkedin.com/in/parimala-devi-bb4a8b383/', icon: 'in' },
   { label: 'LeetCode', handle: '@parimala_07', description: 'Consistent practice, algorithmic thinking, and problem solving.', href: 'https://leetcode.com/u/parimala_07/', icon: 'LC' },
 ];
@@ -93,7 +93,7 @@ function App() {
 
   useEffect(() => {
     const controller = new AbortController();
-    fetch('https://api.github.com/users/parimalanagar07/repos?per_page=100&sort=updated', {
+    fetch('https://api.github.com/users/parimalanagaraj07/repos?per_page=100&sort=updated', {
       headers: { Accept: 'application/vnd.github+json' },
       signal: controller.signal,
     })
@@ -188,7 +188,7 @@ function App() {
       return;
     }
     setFormState('sent');
-    window.location.href = `mailto:parimalanagar07@gmail.com?subject=${encodeURIComponent(`Portfolio message from ${name}`)}&body=${encodeURIComponent(`${message}\n\nReply to: ${email}`)}`;
+    window.location.href = `mailto:parimalanagaraj07@gmail.com?subject=${encodeURIComponent(`Portfolio message from ${name}`)}&body=${encodeURIComponent(`${message}\n\nReply to: ${email}`)}`;
   };
 
   return (
@@ -211,7 +211,7 @@ function App() {
             </button>
           ))}
         </nav>
-        <a className="header-cta" href="mailto:parimalanagar07@gmail.com">Start a conversation <span>↗</span></a>
+        <a className="header-cta" href="mailto:parimalanagaraj07@gmail.com">Start a conversation <span>↗</span></a>
       </header>
 
       <div className="mobile-nav" role="tablist" aria-label="Portfolio sections">
@@ -260,7 +260,7 @@ function App() {
         )}
 
         {active.id === 'contact' && (
-          <div className="content-layout contact-layout"><div className="section-heading"><p className="eyebrow"><span className="eyebrow-line" /> 05 / Contact</p><h2 id="contact-title">Let’s make<br /><em>something clear.</em></h2><p className="heading-note">For a role, collaboration, or simply a thoughtful conversation, send a note.</p><a className="email-link" href="mailto:parimalanagar07@gmail.com">parimalanagar07@gmail.com <span>↗</span></a></div><form className="contact-form" onSubmit={handleContactSubmit} noValidate><label>Your name<input name="name" placeholder="Name" autoComplete="name" /></label><label>Email address<input name="email" type="email" placeholder="your.email@example.com" autoComplete="email" /></label><label>Message<textarea name="message" placeholder="A few words about your project or opportunity…" rows={4} /></label><button className="button button-primary" type="submit">{formState === 'sent' ? 'Opening your mail app' : 'Send message'} <Arrow direction="right" /></button>{formState === 'invalid' && <p className="form-note error">Please add your name, a valid email, and a short message.</p>}{formState === 'sent' && <p className="form-note">Your default mail app should open with a prepared message.</p>}</form></div>
+          <div className="content-layout contact-layout"><div className="section-heading"><p className="eyebrow"><span className="eyebrow-line" /> 05 / Contact</p><h2 id="contact-title">Let’s make<br /><em>something clear.</em></h2><p className="heading-note">For a role, collaboration, or simply a thoughtful conversation, send a note.</p><a className="email-link" href="mailto:parimalanagaraj07@gmail.com">parimalanagaraj07@gmail.com <span>↗</span></a></div><form className="contact-form" onSubmit={handleContactSubmit} noValidate><label>Your name<input name="name" placeholder="Name" autoComplete="name" /></label><label>Email address<input name="email" type="email" placeholder="your.email@example.com" autoComplete="email" /></label><label>Message<textarea name="message" placeholder="A few words about your project or opportunity…" rows={4} /></label><button className="button button-primary" type="submit">{formState === 'sent' ? 'Opening your mail app' : 'Send message'} <Arrow direction="right" /></button>{formState === 'invalid' && <p className="form-note error">Please add your name, a valid email, and a short message.</p>}{formState === 'sent' && <p className="form-note">Your default mail app should open with a prepared message.</p>}</form></div>
         )}
       </section>
 
